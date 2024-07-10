@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'indexa' title`, () => {
+  it(`should have the 'Angular-Learning' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('indexa');
+    expect(app.title).toEqual('Angular-Learning');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, indexa');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, Angular-Learning');
   });
 });
